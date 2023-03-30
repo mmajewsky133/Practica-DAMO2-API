@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $email = $_POST["email"];
     $facultad = $_POST["facultad"];
 
-    if (isset($_POST["id"])) {
+    if (isset($_POST["id"]) or $_POST["id"] != 0) {
         #Editar
 
         $id = $_POST["id"];
